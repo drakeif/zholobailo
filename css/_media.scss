@@ -1,0 +1,20 @@
+@mixin breakpoint($point) {
+    @if $point == xl {
+        @media screen and (max-width: 960px) {@content;}
+    }
+    @else if $point == lg {
+        @media screen and (max-width: 767px) {@content;}
+    }
+    @else if $point == md {
+        @media screen and (max-width: 500px) {@content;}
+    }
+    @else if $point == sm {
+        @media screen and (max-width: 320px) {@content;}
+    }
+    @else if $point == vid {
+        @media screen and (max-width: 1229px) {@content;}
+    }
+    @else if $point == gif {
+        @media screen and (max-width: 1029px) {@content;}
+    }
+} 
